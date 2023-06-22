@@ -1,6 +1,6 @@
 # pearl-diver
 functionalities:
--selfmade sprites
+- selfmade sprites
 - moving diver in x and y directions with arrows
 - velocity accelerates
 - diver has no gravity enemies have gravity (except some in level 3 have a frozen y coordinate)
