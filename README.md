@@ -1,26 +1,32 @@
 # pearl-diver
+project is created with unity version: 2021.3.23f1
 functionalities:
-- selfmade sprites
-- moving diver in x and y directions with arrows
+
+Diver:
+- moving diver in x and y directions with key arrows
+- diver is limited to the field of the camera
 - velocity accelerates
 - diver has no gravity enemies have gravity (except some in level 3 have a frozen y coordinate)
 - diver can change states (red and green) and is able to shoot when in red state
 - diver only dies in green state, in red state he goes back to green
-- different enemies with diffrent behavior
-- turtles can go into their shell if they are hit with a bullte. Shell can also move if being pushed and reflects on e.g. pipes.
-- if turtle is in shell in can hit the diver or the jelly
-- eniemies stop moving if they are not in frame or entities get detsroyed
-- animations of all moving entities
 - diver changes direction if he goes to the right/left or up an down
 - diver can enter pipes and is now underground
 - animations for hitting a mystery block
 - check if diver hits block from below it
+- reloading scene you ae currently in if you loose a live
+Enemies:
+- different enemies with diffrent behavior
+- turtles can go into their shell if they are hit with a bullte. Shell can also move if being pushed and chamges direction when hitting e.g. pipes.
+- if turtle is in shell in can hit the diver or the jelly
+- eniemies stop moving if they are not in frame or entities get detsroyed
+All entities:
+- animations of all moving entities
 - death animations for entities (sometimes also death sprites for e.g. diver and jelly)
+Other:
+- selfmade sprites
 - clicking buttons in menu
 - live status of lives and pearls
-- reloading scene you ae currently in if you loose a live
 - camera can only go right
-- diver is limited to the field of the camera
 - load new level when diver hits pearl in seashell castle
 
 Problems I came across:
@@ -48,5 +54,5 @@ Now, the red diver can be activated. In the following, I added the bulletMove fo
 Moreover, I added pipes and a script for pipe entering. In order to do that the camera also had to be adjusted. 
 There was also a script added NextLevel to attach it to the Seashell Castle to change into the next level.
 After the gameplay parts, I started to work on the UI manager. 
-I added text to show lives and pearls (UiManager). 
+I added text to show lives and pearls (UiManager).
 Finally, I added multiple scenes. I started with the creation of a starting scene with the usage of buttons to click to rules or start the game (Script: Buttons). After that, I created a GameOver scene, two new levels, and finally, a winning scene after you complete the last level.
